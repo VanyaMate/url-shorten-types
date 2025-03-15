@@ -1,0 +1,19 @@
+{
+    "name": "@vanyamate/url-shorten",
+    "private": false,
+    "version": "0.0.3",
+    "author": "VanyaMate",
+    "main": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts",
+    "type": "module",
+    "files": [
+        "src",
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@vanyamate/types-kit": "^0.0.17"
+    }
+}
