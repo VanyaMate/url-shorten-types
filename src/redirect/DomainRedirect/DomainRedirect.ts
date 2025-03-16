@@ -7,7 +7,6 @@ import {
 
 
 export type DomainRedirect = {
-    id: string;
     ip: string;
     redirectTime: number;
 }
@@ -15,7 +14,6 @@ export type DomainRedirect = {
 export const isDomainRedirect: TypeGuard<DomainRedirect> = function (data): data is DomainRedirect {
     return (
         isObject(data) &&
-        isString(data['id']) &&
         isString(data['ip']) &&
         isNumber(data['redirectTime'])
     );
